@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="feedback-container">
+    <h1>Customer Feedback</h1>
+    <label for="category">Select a Service:</label>
+    <select id="category">
+      <option value="accounting">Accounting</option>
+      <option value="registrar">Registrar</option>
+    </select>
+
+    <div class="rating-section">
+      <p>Rate our service:</p>
+      <div class="emoticons">
+        <span class="emoticon" data-rating="poor" title="Poor">😞</span>
+        <span class="emoticon" data-rating="neutral" title="Neutral">😐</span>
+        <span class="emoticon" data-rating="very-good" title="Very Good">😍</span>
+      </div>
+    </div>
+
+    <button onclick="submitFeedback()">Submit Feedback</button>
+    <div id="feedback-result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
